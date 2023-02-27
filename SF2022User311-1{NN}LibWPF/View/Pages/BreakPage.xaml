@@ -10,9 +10,12 @@
 
     <Grid Background="GhostWhite">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <UniformGrid>
+                <Button x:Name="AdminButton" VerticalAlignment="Center" Width="100" Content="Админ" Click="AdminButton_Click"/>
+            </UniformGrid>
             <UniformGrid >
                 <TextBlock HorizontalAlignment="Right" Width="80" Text="Тип события" />
-                <ComboBox x:Name="EventComboBox" Width="100" HorizontalAlignment="Center"/>
+                <ComboBox x:Name="EventComboBox" Width="100" HorizontalAlignment="Center" SelectionChanged="EventComboBoxSelectionChanged"/>
             </UniformGrid>
             <UniformGrid >
                 <TextBlock HorizontalAlignment="Right" Width="80" Text="Время начала события" />

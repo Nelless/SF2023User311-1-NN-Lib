@@ -55,8 +55,5 @@
       <Name>SF2022User311-1{NN}Lib</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="hzcode.txt" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
