@@ -1,0 +1,39 @@
+﻿<Page x:Class="SF2022User311_1_NN_LibWPF.View.Pages.AuthorizationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SF2022User311_1_NN_LibWPF.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AuthorizationPage">
+
+    <Grid Background="GhostWhite">
+        <StackPanel  HorizontalAlignment="Center" VerticalAlignment="Center">
+            <UniformGrid  HorizontalAlignment="Center">
+                <TextBlock>Заполните поля Вашими данными</TextBlock>
+            </UniformGrid>
+            <UniformGrid  HorizontalAlignment="Center">
+                <TextBlock>Поля с * обязательны для заполнения</TextBlock>
+            </UniformGrid>
+            <UniformGrid Margin="12">
+                <TextBlock>Фамилия *</TextBlock>
+            </UniformGrid>
+            <UniformGrid Margin="6">
+                <TextBox x:Name="LastNameTextBox"></TextBox>
+            </UniformGrid>
+            <UniformGrid Margin="12">
+                <TextBlock>Номер полиса *</TextBlock>
+            </UniformGrid>
+            <UniformGrid Margin="6">
+                <TextBox x:Name="PolisIdTextBox"></TextBox>
+            </UniformGrid>
+            <UniformGrid Margin="12">
+                <Button x:Name="AuthButton" Content="Войти" Click="AuthButtonClick"></Button>
+            </UniformGrid>
+            <UniformGrid Margin="20">
+                <Button x:Name="AdminButton" Content="Войти как Администратор" Click="AdminButtonClick"></Button>
+            </UniformGrid>
+        </StackPanel>
+    </Grid>
+</Page>
