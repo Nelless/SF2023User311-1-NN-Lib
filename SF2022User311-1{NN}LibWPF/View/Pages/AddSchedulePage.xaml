@@ -11,9 +11,6 @@
     <Grid Background="GhostWhite">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <UniformGrid>
-                <Button x:Name="GoBackButton" VerticalAlignment="Center" Width="150" Content="Обычная страница" Click="GoBackButton_Click"/>
-            </UniformGrid>
-            <UniformGrid>
                 <TextBlock HorizontalAlignment="Right" Width="80" Text="ФИО врача" />
                 <ComboBox x:Name="FLPComboBox" Width="200" HorizontalAlignment="Center"/>
             </UniformGrid>
