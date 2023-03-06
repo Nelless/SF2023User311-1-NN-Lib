@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -69,11 +69,6 @@ namespace SF2022User311_1_NN_LibWPF.View.Pages
         private void EventComboBoxSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
              eventTypes = Convert.ToInt32(EventComboBox.SelectedValue);
-        }
-
-        private void AdminButton_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new AddSchedulePage());
         }
     }
 }
