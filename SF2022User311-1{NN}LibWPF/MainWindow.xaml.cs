@@ -26,7 +26,7 @@ namespace SF2022User311_1_NN_LibWPF
         {
             InitializeComponent();
 
-            MainFrame.Navigate(new BreakPage());
+            MainFrame.Navigate(new AuthorizationPage());
         }
     }
 }
