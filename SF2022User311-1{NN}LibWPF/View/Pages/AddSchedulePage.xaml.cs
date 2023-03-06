@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SF2022User311_1_NN_LibWPF.model;
+using SF2023User311_1_NN_Lib;
 
 namespace SF2022User311_1_NN_LibWPF.View.Pages
 {
@@ -22,23 +23,20 @@ namespace SF2022User311_1_NN_LibWPF.View.Pages
     public partial class AddSchedulePage : Page
     {
         Core db = new Core();
+
+        Calculations calc = new Calculations();
         public AddSchedulePage()
         {
             InitializeComponent();
 
             FLPComboBox.ItemsSource = db.context.Doctors.ToList();
-            FLPComboBox.DisplayMemberPath = "Patronymic";
+            FLPComboBox.DisplayMemberPath = "FullName";
             FLPComboBox.SelectedValuePath = "Id";
-        }
-
-        private void GoBackButton_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new BreakPage());
         }
 
         private void SheduleButton_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
     }
 }
