@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Height="40" Margin="24">
+            <Button x:Name="GoBackButton" Content="назад" Height="30" Click="GoBackButton_Click"></Button>
+        </StackPanel>
         <Frame x:Name="MainFrame">
             
         </Frame>

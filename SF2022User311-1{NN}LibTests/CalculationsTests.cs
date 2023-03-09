@@ -1,6 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SF2023User311_1_NN_Lib;
 using System;
+using System.Security.Cryptography.X509Certificates;
+using SF2022User311_1_NN_LibWPF;
+using SF2022User311_1_NN_LibWPF.View.Pages;
 
 namespace SF2022User311_1_NN_LibTests
 {
@@ -321,6 +324,16 @@ namespace SF2022User311_1_NN_LibTests
             string[] expectation = Array.Empty<string>();
 
             Assert.ThrowsException<NullReferenceException>(() => Calculations.AvailablePeriods(timeSpans, durations, start, end, consult));
+        }
+
+        [TestMethod]
+        public void EventInput_IncorrectInputEventBlank_ReturnArgumentNullException()
+        {
+            string eventType = "";
+            TimeSpan start = new TimeSpan(8, 0, 0);
+            int duration_t = 60;
+
+            Assert.ThrowsException < NullReferenceException
         }
     }
 }

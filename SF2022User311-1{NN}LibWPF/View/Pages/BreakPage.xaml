@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="BreakPage">
 
-    <Grid Background="GhostWhite">
+    <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <UniformGrid >
                 <TextBlock HorizontalAlignment="Right" Width="80" Text="Тип события" />

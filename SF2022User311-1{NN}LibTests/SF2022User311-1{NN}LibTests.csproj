@@ -45,6 +45,7 @@
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.2.2.7\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
@@ -56,6 +57,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SF2022User311-1{NN}LibWPF\SF2022User311-1{NN}LibWPF.csproj">
+      <Project>{7abcc1fa-2e44-40cb-8df4-98c2425cc5d2}</Project>
+      <Name>SF2022User311-1{NN}LibWPF</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SF2022User311-1{NN}Lib\SF2022User311-1{NN}Lib.csproj">
       <Project>{bd0c98e3-1bd1-4ef7-a3fe-9b12d2d49ef0}</Project>
       <Name>SF2022User311-1{NN}Lib</Name>
