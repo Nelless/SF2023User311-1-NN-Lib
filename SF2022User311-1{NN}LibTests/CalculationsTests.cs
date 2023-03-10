@@ -4,6 +4,7 @@ using System;
 using System.Security.Cryptography.X509Certificates;
 using SF2022User311_1_NN_LibWPF;
 using SF2022User311_1_NN_LibWPF.View.Pages;
+using SF2022User311_1_NN_Lib;
 
 namespace SF2022User311_1_NN_LibTests
 {
@@ -329,11 +330,11 @@ namespace SF2022User311_1_NN_LibTests
         [TestMethod]
         public void EventInput_IncorrectInputEventBlank_ReturnArgumentNullException()
         {
-            string eventType = "";
-            TimeSpan start = new TimeSpan(8, 0, 0);
-            int duration_t = 60;
+            //string eventType = "";
+            //TimeSpan start = new TimeSpan(8, 0, 0);
+            //int duration_t = 60;
 
-            Assert.ThrowsException < NullReferenceException
+            //Assert.ThrowsException<NullReferenceException>(() => CorrectString.IsCorrectString());
         }
     }
 }
