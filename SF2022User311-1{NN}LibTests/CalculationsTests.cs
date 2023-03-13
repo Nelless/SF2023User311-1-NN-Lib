@@ -330,12 +330,20 @@ namespace SF2022User311_1_NN_LibTests
         [TestMethod]
         public void EventInput_IncorrectInputEventBlank_ReturnArgumentNullException()
         {
-
-            string eventType = "";
-            TimeSpan start = new TimeSpan(8, 0, 0);
+            CorrectString corrstring = new CorrectString();
+            string eventType = "1";
+            TimeSpan start = new TimeSpan(08, 00, 00);
             int duration_t = 60;
 
-            Assert.ThrowsException<NullReferenceException>(() => CorrectString.IsCorrectString());
+            string[] expectation =
+            {
+                "1",
+                "08:00",
+                "60"
+
+            };
+
+            Assert.AreEqual(expectation, corrstring.IsCorrectTimeString(eventType, ));
         }
     }
 }
