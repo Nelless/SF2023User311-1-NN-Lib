@@ -193,7 +193,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="model\Controllers\" />
+    <Folder Include="model\Controllers\-\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

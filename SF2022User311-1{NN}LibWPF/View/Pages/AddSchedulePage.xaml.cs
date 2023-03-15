@@ -36,7 +36,7 @@ namespace SF2022User311_1_NN_LibWPF.View.Pages
 
         private void SheduleButton_Click(object sender, RoutedEventArgs e)
         {
-            //calc.AvailablePeriods( startTimes:, );
+            //calc.AvailablePeriods( startTimes:, ); 
         }
     }
 }
