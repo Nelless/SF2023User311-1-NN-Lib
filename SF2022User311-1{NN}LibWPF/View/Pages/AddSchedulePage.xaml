@@ -9,7 +9,7 @@
       Title="AddSchedulePage">
 
     <Grid>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20">
             <UniformGrid>
                 <TextBlock HorizontalAlignment="Right" Width="80" Text="ФИО врача" />
                 <ComboBox x:Name="FLPComboBox" Width="200" HorizontalAlignment="Center"/>
@@ -17,6 +17,48 @@
             <UniformGrid>
                 <Button x:Name="SheduleButton" HorizontalAlignment="Center" Content="Сформировать расписание" Click="SheduleButton_Click"/>
             </UniformGrid>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Bottom" Background="DarkGreen">
+            <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" Margin="0, 0, 0, 1">
+                <Label>
+                    Врач:
+                </Label>
+                <TextBlock x:Name="DoctorName">
+
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0, 0, 0, 1">
+                <Label>
+                    Специальность:
+                </Label>
+                <TextBlock x:Name="DoctorSpeciality">
+
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0, 0, 0, 1">
+                <Label>
+                    ЛПУ:
+                </Label>
+                <TextBlock x:Name="DoctorHospital">
+
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0, 0, 0, 1">
+                <Label>
+                    Адрес:
+                </Label>
+                <TextBlock x:Name="HospitalAdres">
+
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0, 0, 0, 1">
+                <Label>
+                    Дата:
+                </Label>
+                <TextBlock x:Name="RecordData">
+
+                </TextBlock>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>

@@ -328,22 +328,14 @@ namespace SF2022User311_1_NN_LibTests
         }
 
         [TestMethod]
-        public void EventInput_IncorrectInputEventBlank_ReturnArgumentNullException()
+        public void IsRightTime_RightTime_ReturnTrue()
         {
-            CorrectString corrstring = new CorrectString();
-            string eventType = "1";
-            TimeSpan start = new TimeSpan(08, 00, 00);
-            int duration_t = 60;
+            //Arrange
+            string entryString = "23:10";
 
-            string[] expectation =
-            {
-                "1",
-                "08:00",
-                "60"
 
-            };
-
-            Assert.AreEqual(expectation, corrstring.IsCorrectTimeString(eventType, ));
+            //Assert
+            Assert.IsTrue(CorrectString.IsCorrectTimeString(entryString));
         }
     }
 }
